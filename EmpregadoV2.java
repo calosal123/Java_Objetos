@@ -1,7 +1,20 @@
-public class Empregado{
+public class EmpregadoV2{
     private String nome;
     private String cargo;
     private double salario;
+
+    // este método específico é chamado de "CONSTRUTOR"
+    // significa que ele é executado no momento que damos NEW no objeto
+    
+    public EmpregadoV2(String novoNome, String novoCargo, double novoSalario){
+        nome    = novoNome;
+        cargo   = novoCargo;
+        salario = novoSalario;
+    }
+    // qual o detalhe que temos que prestar atenção?
+    // agora, como temos o construtor declarado, a forma de criar o objeto muda
+    // para dar NEW no objeto, temos que passar estas 3 informações
+
 
 
 

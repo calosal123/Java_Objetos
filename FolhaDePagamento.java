@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class FolhaDePagamento{
     public static void main(String args[]){
+
         Scanner teclado = new Scanner(System.in);
-        Empregado e1;
+        // Empregado e1;
         String txtNome;
         String txtCargo;
         String txtSalario;
@@ -17,11 +18,12 @@ public class FolhaDePagamento{
         txtSalario = teclado.nextLine();
 
 
-        e1 = new Empregado();
-
-        e1.setNome(txtNome);
-        e1.setCargo(txtCargo);
-        e1.setSalario(Double.parseDouble(txtSalario)); // aqui sou obrigado a converter de String par double
+        // e1 = new Empregado();
+        EmpregadoV2 e1;
+        e1 = new EmpregadoV2(txtNome, txtCargo, Double.parseDouble(txtSalario));
+        // e1.setNome(txtNome);
+        // e1.setCargo(txtCargo);
+        // e1.setSalario(Double.parseDouble(txtSalario)); // aqui sou obrigado a converter de String par double
 
         System.out.println(e1.exibirInfo());
         System.out.print("Digite o percentual de aumento:");
